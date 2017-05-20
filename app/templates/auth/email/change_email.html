@@ -1,0 +1,7 @@
+<p>尊敬的 {{ user.username }},</p>
+<p>确认您的新电子邮件地址 <a href="{{ url_for('auth.change_email', token=token, _external=True) }}">点击这里</a>.</p>
+<p>或者，您可以在浏览器的地址栏粘贴以下链接:</p>
+<p>{{ url_for('auth.change_email', token=token, _external=True) }}</p>
+<p>谨上</p>
+<p>来自Ohana</p>
+<p><small>注意: 请不要回复此邮件</small></p>

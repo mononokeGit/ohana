@@ -1,0 +1,13 @@
+尊敬的 {{ user.username }},
+
+欢迎来到Ohana！
+
+您可以通过点击以下链接确认您的账户：
+
+{{ url_for('auth.confirm', token=token, _external=True) }}
+
+谨上，
+
+来自Ohana
+
+注意: 请不要回复此邮件
